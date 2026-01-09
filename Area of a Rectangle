@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int area(int length, int width)
+{
+    return length * width;
+}
+
+int main(void)
+{
+    int c, d;
+
+    scanf("%d %d", &c, &d);
+
+    int result = area(c, d);
+
+    printf("The area is: %d units", result);
+
+    return 0;
+}
