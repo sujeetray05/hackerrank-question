@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int sumLastDigits(int a, int b)
+{
+    int lastDigitA = a % 10;
+    int lastDigitB = b % 10;
+
+    return lastDigitA + lastDigitB;
+}
+
+int main(void)
+{
+    int s, p;
+
+    scanf("%d %d", &s, &p);
+
+    int result = sumLastDigits(s, p);
+
+    printf("The sum of last digits is: %d", result);
+
+    return 0;
+}
